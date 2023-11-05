@@ -1,0 +1,136 @@
+@import 
+    url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    line-height: 20px;
+    padding: 90px;
+}
+
+img {
+    width: 30px;
+    border-radius: 100%;
+    border-color: rgba(255, 255, 255, 0.50);
+    border-width: 2px;
+    border-style: solid;  
+    display: flexbox; 
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.heading {
+display: inline-block;
+margin-left: 10px;
+}
+
+#light-text {
+    color: #F7F7F7;
+}
+
+#dark-text {
+    color: #575757;
+}
+
+h2, h3 {
+    margin: auto;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+p, h3 {
+    font-size: 13px;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+
+.quote {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.shape {
+    margin:15px;
+    border-radius: 10px;
+    padding: 30px;
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.185);
+}
+
+#daniel-clifford {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: 125px;
+}
+
+
+#jeanette-harmon {
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 2;
+grid-row-end: 2;
+background-color: white;
+color: hsl(217, 19%, 35%);
+}
+
+#kira-whittle {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+    
+}
+
+#patrick-abrams {
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color:white;
+}
+
+#patrick-abrams img {
+    border-color: hsl(263, 55%, 52%);
+}
+
+#jonathan-walters {
+    background-color: hsl(217, 19%, 35%);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;  
+    color: white;
+}
+
+
+@media  (max-width: 1000px) {
+    .testimonials {
+        display: block;
+        }
+
+        body {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            padding: 25px;
+        }
+}
